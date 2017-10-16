@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Mr+Bedfort');
+
+$font1: 'Amatic SC', cursive;
+$font2: 'Mr Bedfort', cursive;
+
+$bg-color: #2C5A80; //Bahama Blue
+$lrg-font-color: #2C6FAE; //Lochmara 
+
+body {
+	background-color: $bg-color; 
+
+}
+#header {
+	text-align: center;
+	margin-top: 30px;
+}
+
+h1 {
+	color: $lrg-font-color;
+	font-family: $font2;
+	
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+h2, h3, h4, h5, p {
+	color: $lrg-font-color;
+	font-family: $font1;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.navbar {
+	background-color: $bg-color;
+	border: none;
+	
+}
+
+a {
+	color: $lrg-font-color;
+}
+
+.list-group-item {
+	background: $bg-color;
+	border: none;
+	font-family: $font1;
+	font-size: 1.5em;
+}
+
+.nav-links {
+	font-family: $font1;
+	font-size: 1.5em;
+}
+.well {
+	background-color: $bg-color;
+	border: none;
+	font-family: $font1;
+	font-size: 1.5em;
+}
+
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
+
+#footer {
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

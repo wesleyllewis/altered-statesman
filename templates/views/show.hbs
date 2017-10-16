@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<article>
+				<p><a href="/shows">&larr; Back to Shows</a></p>
+				<hr>
+				<header>
+					<h1>{{data.show.title}}</h1>
+				</header>
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						{{#if data.show.image}}
+							<img src="{{{cloudinaryUrl data.show.image crop='fit'}}}" class="img-responsive">
+						{{/if}}
+					</div>
+					<div class="col-md-6 col-lg-6">
+						<ul class="list-group">
+							<li class="list-group-item"><strong>Date: </strong> {{data.show.date}}</li>
+							<li class="list-group-item"><strong>Time: </strong> {{data.show.time}}</li>
+						</ul>
+						<div class="well">
+							{{data.show.description}}
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>

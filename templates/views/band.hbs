@@ -1,0 +1,17 @@
+<div class='container'>
+	<h1>The Band</h1>
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<div class="row">
+				{{# each bands}}
+					<div class="col-md-4 col-lg-4">
+						<h2><a href="{{bandUrl slug}}">{{{title}}}</a></h2>
+						{{#if image}}
+							<a href="{{bandUrl slug}}"><img src={{{cloudinaryUrl image width=160 height= 160 crop="fit"}}} class="thumbnail"></a>
+						{{/if}}
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

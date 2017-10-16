@@ -1,0 +1,26 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<article>
+				<p><a href="/videos">&larr; Back to Videos</a></p>
+				<hr>
+				<header>
+					<h1>{{data.video.title}}</h1>
+				</header>
+				<div class="row">
+					<div class="col-md-6 col-lg-6">
+						{{#if data.video.image}}
+							<img src="{{{cloudinaryUrl data.video.image crop='fit'}}}" class="img-responsive">
+						{{/if}}
+					</div>
+					<div class="col-md-6 col-lg-6">
+						{{data.video.webAddress}}
+						<div class="well">
+							{{data.video.description}}
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</div>
