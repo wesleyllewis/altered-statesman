@@ -1,10 +1,11 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Band = new keystone.List('AlbumBand
-singular: 'Band',
-plural: 'Bands',
-autokey: { path: 'slug', from: 'title', unique: true, }
+var Band = new keystone.List('Band', {
+    map: { name: 'title' },
+    singular: 'Band',
+    plural: 'Bands',
+    autokey: { path: 'slug', from: 'title', unique: true, }
 });
 
 Band.add({
